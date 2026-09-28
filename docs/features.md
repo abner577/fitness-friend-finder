@@ -37,6 +37,20 @@ People can like or pass on a suggested profile. Chat opens after both people lik
 
 Chat gives people a place to talk about an activity and make plans. A practical first version should also let someone leave a match, block a person, or report a problem. Those safety controls are recommendations to include before inviting real users.
 
+### A suggested way to handle likes
+
+This is a recommendation to settle before building the feature:
+
+- **Explore:** See people you have not decided about and like or pass on them. You can like someone even if they have not liked you yet.
+- **Interested in you:** See people who liked you first. You can like one back to make a match, or pass. If a profile was already open in Explore when their like arrived, liking it there should work the same way.
+- **Matches:** Once both people have liked each other, show them in one shared match and let them chat. The message should say **"You matched"**, not "this person liked you back," because both people made the choice.
+
+A person should not have to like the same person twice. After you like someone, their profile leaves your Explore list. If they liked you first, they move from Interested in you to Matches when you like them back. When the other person likes you too, the app checks the latest saved choices for that pair and makes one match. Both people see that same match, even if they tapped Like at nearly the same time. A profile card that was already open may be briefly out of date, but tapping it still checks those latest choices. Tapping Like twice by accident should not create two likes or two chats.
+
+To keep notices clear, the first version could show new incoming likes inside the app and send a phone notification only for a new match. If both likes arrive close together, each person gets one match notice; an old "someone liked you" notice should not appear afterward. Whether to send phone notifications for one-sided likes is still open.
+
+This suggested three-part flow is similar to [Hinge's explanation of Discover, Likes You, and Matches](https://help.hinge.co/hc/en-us/articles/360011090134-How-Do-I-Match-with-Someone-and-Start-Chatting). Tinder also describes a match as two people liking each other, though its page for seeing incoming likes is currently a paid feature: [Tinder overview](https://www.help.tinder.com/hc/en-us/articles/115004647686-Tinder-Overview), [Tinder Likes](https://www.help.tinder.com/hc/en-us/articles/115005246123-Likes). For a friendship app, the recommendation is to let everyone see incoming likes. These pages describe what people see; the one-match rule above is our own proposed way to handle the timing issue.
+
 ## Later ideas: sharing activities
 
 ### Activity posts and photos
