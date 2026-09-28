@@ -5,6 +5,7 @@
 - The app is for making fitness friends, not for dating.
 - The first version is for adults. Miami is the first place to focus on finding users, but the app should also work elsewhere.
 - React Native is the choice for an iPhone and Android app. The founder works on Windows and does not have a Mac or Xcode.
+- Supabase is the chosen managed backend platform to reduce custom infrastructure work. It provides managed PostgreSQL, Auth, Storage, Realtime, and project logs. We will still design application-specific tables, Row Level Security policies, and matching rules. Its official Expo React Native quickstart is a starting point, not a finished app. [Architecture plan](architecture.md)
 - People make profiles with their age, photos, sports, and other details about themselves. Music taste, other hobbies, college status, and major can be added when relevant.
 - Each activity can show interest and whether or how often someone does it, including if they want to try it. The exact labels or number scale are still open.
 - Phone location is the default. With permission, it refreshes when the person opens the app. Entering a city is the fallback.
@@ -22,7 +23,7 @@
 - Use three places for the liking flow: Explore, Interested in you, and Matches. Each person can like the other once, and the pair can have only one match, even when both tap Like almost together. [The suggested flow](features.md#a-suggested-way-to-handle-likes) has examples.
 - Show only a broad area on profiles. Give people ways to leave a match, block someone, and report a problem before real users join.
 - Let people switch to a chosen city if they stop using phone location.
-- Expo is one possible way to work on the React Native app from Windows and have an iPhone build made in the cloud. Supabase could help with accounts, saved profiles, and chat; PostGIS could handle distance checks. None of these supporting tools has been chosen yet. [Expo's Windows and iPhone explanation](https://docs.expo.dev/faq/)
+- The [proposed architecture](architecture.md) uses React Native with Expo/EAS for mobile builds and enables PostGIS in Supabase PostgreSQL for distance queries. Expo/EAS and PostGIS are current recommendations; Vercel could host a later website, and AWS is an option if concrete infrastructure needs arise.
 
 ## Feature list
 
