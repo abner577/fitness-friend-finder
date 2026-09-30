@@ -1,14 +1,12 @@
-export default function myFaunction() {
-  let myVar = "Hello, World!";
-  return myVar + "!";
-}
+const names = ["Pedro", "Jack", "Jessica"];
 
-export const myFunc = () => {
-    // Function implementation
-}
+const names2 = names.map( (name) => {
+    return name + "1";
+});
 
-var myVar = "Hello, World!";
+const namesWithoutPedro = names.filter( (name) => {
+    return name !== "Pedro";
+});
 
-const myComponenet = () => {
-    return <View><Text>{myVar}</Text></View>;
-}
+console.log(names2);
+console.log(namesWithoutPedro);
