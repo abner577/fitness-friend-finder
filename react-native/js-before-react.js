@@ -10,3 +10,19 @@ const namesWithoutPedro = names.filter( (name) => {
 
 console.log(names2);
 console.log(namesWithoutPedro);
+
+
+async function loadUser() {
+  try {
+    const response = await fetch("https://example.com/api/user");
+
+    if (!response.ok) {
+      throw new Error(`Request failed: ${response.status}`);
+    }
+
+    const user = await response.json();
+    return user;
+  } catch (error) {
+    console.error("Could not load user:", error);
+  }
+}
