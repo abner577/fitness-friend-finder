@@ -84,3 +84,6 @@ An AI assistant is a much later idea. It could suggest an activity and time base
 ## Later idea: improving suggestions
 
 The app could improve its suggestions after learning which ones people actually find useful. Sports would remain the main focus, while shared music, hobbies, or college details could help a little.
+
+- asdasdasd
+
